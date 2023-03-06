@@ -58,6 +58,8 @@ OBJDUMP = $(TOOLPREFIX)objdump
 
 ASFLAGS = -ggdb -gdwarf-2
 CFLAGS = -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2
+# Uncomment the line below to disable compile time optimisations 
+#CFLAGS = -Wall -Werror -O0 -fno-omit-frame-pointer -ggdb -gdwarf-2
 CFLAGS += -MD
 CFLAGS += -mcmodel=medany
 CFLAGS += -ffreestanding -fno-common -nostdlib -mno-relax
